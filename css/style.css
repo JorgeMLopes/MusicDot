@@ -2,18 +2,36 @@
 
 body {
     margin: 0 auto;
-    width: 940px;
+    max-width: 940px;
+    width: 80%;
     box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 16px;
     font-family: "Helvetica", "Lucida Grande", sans-serif;
     color: #3d3d3d;
 }
 
-h1 {
+.rodape {
+    font-size: 1.1rem;
+    padding: 1.75em 0;
+}
+
+.rodape-logo {
+    width: 6em;
+}
+
+.rodape-copyright {
+    margin-left: 1em;
+    display: inline;
+}
+
+.titulos {
+    font-size: 32px;
     padding: 10px;
     background-color: #e1edf2;
 }
 
-h2 {
+.subtitulos {
     border-bottom: 1px solid #000000;
 }
 
@@ -21,6 +39,7 @@ figure {
     padding: 15px;
     margin: 30px;
     padding: 15px;
+    max-width: 100%;
     text-align: center;
     color: #909090;
     background-color: #f5f5f5;
@@ -31,6 +50,20 @@ figcaption {
     margin-top: 10px;
 }
 
+figure img {
+    height: inherit;
+    width: inherit;
+}
+
+.imgmatriz {
+    width: 550px;
+}
+
+.imgfamilia {
+    float: right;
+    width: 275px;
+}
+
 ul {
     list-style-type: circle;
 }
@@ -39,3 +72,61 @@ a {
     color: #47617a;
     text-decoration: none;
 }
+
+.contato-secao {
+    margin-left: 16px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.container-contato {
+    justify-content: space-around;
+    display: flex;
+    max-width: 100%;
+}
+
+.informacoes-contato {
+    display: flex;
+}
+
+.contato-subtitulo {
+    display: inline;
+}
+
+.contato-subtitulo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contato-secao-telefone {
+    margin-left: 32px;
+}
+
+div dl div {
+    margin-right: 20px;
+    display: inline;
+}
+
+.informacoes-contato {
+    display: inline;
+    font-size: small;
+}
+
+.contato-info {
+    margin: 16px 0 24px;
+    padding-left: 32px;
+}
+
+.contato-info ul {
+    padding: 0;
+    list-style: none;
+}
+
+.contato-info-titulo, .contato-info-descricao {
+    display: inline;
+}
+
+.contato-info-descricao {
+    margin-left: 10px;
+}
+
