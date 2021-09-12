@@ -11,26 +11,6 @@ body {
     color: #3d3d3d;
 }
 
-.rodape {
-    font-size: 1.1rem;
-    padding: 1.75em 0;
-}
-
-.rodape-logo {
-    width: 6em;
-}
-
-.rodape-copyright {
-    margin-left: 1em;
-    display: inline;
-}
-
-.titulos {
-    font-size: 32px;
-    padding: 10px;
-    background-color: #e1edf2;
-}
-
 .subtitulos {
     border-bottom: 1px solid #000000;
 }
@@ -52,10 +32,10 @@ figcaption {
 
 figure img {
     height: inherit;
-    width: inherit;
+    width: 100%;
 }
 
-.imgmatriz {
+.imgmatriz{
     width: 550px;
 }
 
@@ -65,12 +45,17 @@ figure img {
 }
 
 ul {
+    font-size: medium;
     list-style-type: circle;
 }
 
 a {
     color: #47617a;
     text-decoration: none;
+}
+
+div dd a {
+    font-size: smaller;
 }
 
 .contato-secao {
@@ -103,8 +88,8 @@ a {
 }
 
 div dl div {
+    font-style: italic;
     margin-right: 20px;
-    display: inline;
 }
 
 .informacoes-contato {
@@ -130,3 +115,78 @@ div dl div {
     margin-left: 10px;
 }
 
+@media (max-width: 850px){
+
+    .container-contato {
+        margin-left: 1em;
+        display: block;
+    }
+
+    .contato-secao-telefone {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 622px){
+    .imgfamilia {
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+@media (max-width: 446px){
+
+    .titulos {
+        text-align: center;
+    }
+
+    .imgfamilia {
+        width: 230px;
+    }
+
+    .contato-subtitulo {
+        margin-bottom: 0px;
+        display: block;
+    }
+
+    .informacoes-contato {
+        display: block;
+    }
+
+    .contato-info {
+        font-size: 0.99em;
+        border-left: 2px solid #98c5e2;
+        padding-left: 5px;
+    }
+
+    .contato-info ul {
+        font-size: 0.99em;
+    }
+
+    .rodape img, .rodape-copyright {
+        font-size: 0.92em;
+    }
+}
+
+@media (max-width: 384px){
+    .imgfamilia {
+        width: 200px;
+    }
+
+    .contato-info-titulo, .contato-info-descricao {
+        display: block;
+    }
+}
+.rodape {
+    font-size: 1.1rem;
+    padding: 1.75em 0;
+}
+
+.rodape-logo {
+    width: 6em;
+}
+
+.rodape-copyright {
+    margin-left: 1em;
+    display: inline;
+}

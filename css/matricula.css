@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.header-navbar-logo {
+    width: 8rem;
+    margin-right: 1rem;
+}
+
+.header-matricula h1 {
+    font-weight: 300;
+}
+
+.rounded-top {
+    overflow: hidden;
+}
+
+.teste  a {
+    color: rgb(235, 43, 43);
+}
+
+.teste a:hover {
+    color: #fff;
+}
+
+.cabecalho-menu-itens {
+    display: flex;
+}

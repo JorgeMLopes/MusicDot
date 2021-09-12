@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #fff;
+}
+
+.cabecalho-logo {
+    padding: 1.5em 0;
+    width: 14.5em;
+}
+
+.cabecalho-menu {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #272B3A87;
+}
+
+.cabecalho-menu-itens {
+    display: inline-block;
+}
+
+.cabecalho-menu-itens a {
+    display: inline-block;
+    padding: 1.86em 1.42em;
+}
+
+.cabecalho-menu-itens a:hover {
+    color: #e93d50;
+}
+
+@media (min-width: 640px){
+
+    header {
+        padding-bottom: 0;
+        padding-top: 0;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .cabecalho-logo {
+        padding: 2.5em 0;
+    }
+
+    .cabecalho-menu {
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 770px){
+    .cabecalho-item-matricule-se{ 
+        border-radius: 6px;
+        margin-left: 1.42em;
+        background-color: #e93d50;
+    }
+
+    .cabecalho-item-matricule-se:hover {
+        border-radius: 3px;
+        background-color: #fff;
+    }
+
+    .cabecalho-item-matricule-se a {
+        padding: 1.82em 3.5em;
+    }
+}
